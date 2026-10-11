@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover SoundWave wireless headphones.">
+  <title>SoundWave | Premium Audio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="#home">SoundWave<span>.</span></a>
+
+      <button class="menu-toggle" id="menuToggle"
+              aria-label="Toggle navigation"
+              aria-expanded="false">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="nav-buy" href="#product">Buy Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">INTRODUCING SOUNDWAVE</p>
+        <h1>Experience Sound<br>Like Never Before.</h1>
+        <p class="hero-description">
+          Premium wireless headphones designed for immersive sound,
+          everyday comfort, and freedom.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#product">Explore Product</a>
+          <a class="btn btn-outline" href="#features">Learn More</a>
+        </div>
+        <p class="hero-note">Designed for your everyday soundtrack.</p>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="Images/Hero_Image.avif"
+          alt="Premium headphones"
+        >
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section" id="features">
+      <div class="section-heading">
+        <p class="eyebrow">WHY SOUNDWAVE?</p>
+        <h2>Sound that fits your life.</h2>
+        <p>Everything you need for a better listening experience.</p>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card">
+          <span class="feature-icon">♫</span>
+          <h3>Premium Sound</h3>
+          <p>Enjoy clear audio and rich bass for your favorite music.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon">◷</span>
+          <h3>Long Battery Life</h3>
+          <p>Keep your music going throughout your busy day.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon">⌁</span>
+          <h3>Wireless Freedom</h3>
+          <p>Enjoy convenient listening without tangled wires.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon">♡</span>
+          <h3>Comfortable Design</h3>
+          <p>Relax with a lightweight design made for everyday use.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Product -->
+    <section class="product-section" id="product">
+        
+        <div class="product-image">
+            <img
+                id="productImage"
+                src="Images/Black_Headphones.jpg"
+                alt="SoundWave Pro black headphones"
+            >
+        </div>
+
+
+      <div class="product-details">
+        <p class="eyebrow">YOUR NEXT FAVORITE</p>
+        <h2>SoundWave Pro</h2>
+        <p class="product-description">
+          A stylish audio companion for music, study sessions,
+          travel, and everyday adventures.
+        </p>
+
+        <p class="price">₹2,999 <span>Demo price</span></p>
+
+        <h3>Choose your color</h3>
+        <div class="color-options">
+          <button class="color-btn selected" data-color="Black"
+                  aria-pressed="true">Black</button>
+          <button class="color-btn" data-color="White"
+                  aria-pressed="false">White</button>
+          <button class="color-btn" data-color="Blue"
+                  aria-pressed="false">Blue</button>
+        </div>
+        <p id="selectedColor">Selected color: Black</p>
+
+        <button class="btn btn-primary" id="addToCart">
+          Add to Cart
+        </button>
+        <p id="cartMessage" role="status" aria-live="polite"></p>
+
+        <ul class="product-points">
+          <li>✓ Premium over-ear design</li>
+          <li>✓ Wireless listening</li>
+          <li>✓ Soft ear cushions</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about-section" id="about">
+      <p class="eyebrow">OUR STORY</p>
+      <h2>Technology meets everyday life.</h2>
+      <p>
+        At SoundWave, we believe technology should make everyday
+        experiences better. Our concept brings together quality
+        sound, thoughtful design, and convenience.
+      </p>
+    </section>
+
+    <!-- Reviews -->
+    <section class="review-section">
+      <p class="eyebrow">CUSTOMER LOVE</p>
+      <h2>Made for your moments.</h2>
+      <blockquote>
+        “Great sound quality and a comfortable design for everyday
+        listening.”
+      </blockquote>
+      <p>— Sample customer testimonial</p>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+      <div>
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h2>Have questions?</h2>
+        <p>Send us a message using the form.</p>
+      </div>
+
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text"
+               placeholder="Your name" required minlength="2">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email"
+               placeholder="you@example.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message"
+                  placeholder="How can we help?" required
+                  minlength="10"></textarea>
+
+        <button class="btn btn-primary" type="submit">Send Message</button>
+        <p id="formMessage" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#home">SoundWave<span>.</span></a>
+    <p>Sound that moves you.</p>
+    <p>© 2026 SoundWave. Demo project.</p>
+  </footer>
+
+</body>
+</html>
